@@ -1,1 +1,0 @@
-ng build --prod --base-href "https://hookdump.github.io/meetingtimer/"
