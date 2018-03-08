@@ -1,0 +1,60 @@
+.main {
+  text-align: center;
+
+  .title {
+    color: #E0E0E0;
+  }
+
+  .current {
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .active {
+    color: #00AA00;
+  }
+
+  .clock {
+    .hours {
+      font-size: 15vw;
+    }
+    .days {
+      font-size: 12vw;
+      font-style: normal;
+      color: black;
+      display: none;
+    }
+    &.faltanDias {
+      .days {
+        display: block;
+      }
+      .hours {
+        font-size: 8vw;
+        color: #D0D0D0;
+      }
+    }
+  }
+
+  .timeline {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    li {
+      display: block;
+      padding: 10px;
+      margin: 5px;
+      &.act {
+        color: #009900;
+        font-weight: bold;
+      }
+      em {
+        font-style: normal;
+        display: inline-block;
+        width: 50px;
+      }
+      background-color: #E0E0E0;
+    }
+  }
+}
