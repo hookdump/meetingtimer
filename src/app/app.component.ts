@@ -10,11 +10,11 @@ export class AppComponent {
   title = 'app';
   displayClock = '00:00:00';
   timerObj = null;
-  wins = moment('2018-03-15 18:00:00.000-03:00');
-  hotseat = moment('2018-03-15 18:10:00.000-03:00');
-  goals = moment('2018-03-15 18:50:00.000-03:00');
-  end = moment('2018-03-15 19:00:00.000-03:00');
-  next = moment('2018-03-22 18:00:00.000-03:00');
+  wins = moment('2018-03-22 18:00:00.000-03:00');
+  hotseat = moment('2018-03-22 18:10:00.000-03:00');
+  goals = moment('2018-03-22 18:50:00.000-03:00');
+  end = moment('2018-03-22 19:00:00.000-03:00');
+  next = moment('2018-03-29 18:00:00.000-03:00');
   displayCurrent = '...';
   countDays = 0;
 
@@ -40,7 +40,7 @@ export class AppComponent {
     }
     if (now.isSameOrAfter(this.hotseat)) {
       console.log('H');
-      this.displayCurrent = 'Hot Seat: Walter';
+      this.displayCurrent = 'Hot Seat: Juan';
       this.target = this.goals;
       this.act = 1;
     }
