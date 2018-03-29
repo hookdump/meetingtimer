@@ -18,6 +18,7 @@ export class AppComponent {
   next = this.wins.add(1, 'weeks');
   displayCurrent = '...';
   countDays = 0;
+  hotSeat = 'Hot Seat: Nacho';
 
   act = -1;
 
@@ -41,7 +42,7 @@ export class AppComponent {
     }
     if (now.isSameOrAfter(this.hotseat)) {
       console.log('H');
-      this.displayCurrent = 'Hot Seat: Juan';
+      this.displayCurrent = this.hotSeat;
       this.target = this.goals;
       this.act = 1;
     }
