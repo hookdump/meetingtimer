@@ -15,7 +15,7 @@ export class AppComponent {
   hotseat = moment('2018-03-29 19:10:00.000-03:00');
   goals = moment('2018-03-29 19:50:00.000-03:00');
   end = moment('2018-03-29 20:00:00.000-03:00');
-  next = this.wins.add(1, 'weeks');
+  next = moment(this.wins).add(1, 'weeks');
   displayCurrent = '...';
   countDays = 0;
   hotSeat = 'Hot Seat: Nacho';
